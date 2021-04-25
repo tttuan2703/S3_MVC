@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MVC_Bai5_KetNoiEF.Models.tbl_Deparment>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SideBarDept</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <ul class="list-group list-group-flush text-left bg-light">
+                    <li class="list-group-item " style="background-color:lightseagreen"><h4>
+                        DANH SÁCH PHÒNG BAN
+                        </h4></li>
+                    @foreach(var item in Model) {
+                <li class="list-group-item bg-light">
+                    @Html.ActionLink(item.Name, "ShowEmplParameter", "Home", new { id = item.DeptId }, null)
+                                        (@Html.ActionLink("Edit", "UpdateDept", new { id = item.DeptId }) |
+                                        @Html.ActionLink("Details", "DetailDept", new { id = item.DeptId }))
+                                    </li>
+                            }
+</ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

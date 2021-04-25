@@ -1,0 +1,74 @@
+﻿@model MVC_Bai5_KetNoiEF.Models.tbl_Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateEmployee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <div class="container mt-4">
+        <div class="card ">
+            <div class="card-body">
+                @using (Html.BeginForm()) {
+                    @Html.ValidationSummary(true)
+    
+                    <fieldset>
+                        <legend style="font-weight:bold;color:blue;font-size:35px">THÊM MỚI NHÂN VIÊN</legend>
+    
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Name)
+                            @Html.TextBoxFor(model => model.Name, new { @class="form-control"})
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class="text-danger"})
+                        </div>    
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Gender)
+                            @Html.DropDownListFor(model => model.Gender, new List<SelectListItem> { 
+                       new SelectListItem{Text="Nam",Value="Nam",Selected=true},
+                       new SelectListItem{Text="Nữ",Value="Nữ",Selected=true}},new {@class="form-control" })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class="text-danger"})
+                        </div>
+    
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.City)
+                            @Html.TextBoxFor(model => model.City, new { @class="form-control"})
+                            @Html.ValidationMessageFor(model => model.City, "", new { @class="text-danger"})
+                        </div>
+    
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.DeptId)
+                            @Html.DropDownListFor(model => model.DeptId, null, "select deparment", new { @class="form-control"})
+                            @Html.ValidationMessageFor(model => model.City, "", new { @class="text-danger"})
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Image)
+                            @Html.TextBoxFor(model => model.Image, new { @class="form-control", type="file"})
+                            @Html.ValidationMessageFor(model => model.City, "", new { @class="text-danger"})
+                        </div>
+                        <p>
+                            <input type="submit" value="Create" class="btn btn-primary rounded" />
+                        </p>
+                    </fieldset>
+                }
+                </div>
+            </div>
+        @Html.ActionLink("Back to List", "ShowEmployee","Home") | 
+        @Html.ActionLink("Back to Side Bar Dept", "SideBarDept")
+         </div>
+    <div>
+    </div>
+</body>
+</html>

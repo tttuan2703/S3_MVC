@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QL_NhanSuModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="QL_NhanSuModelStoreContainer">
+          <EntitySet Name="tbl_Deparment" EntityType="QL_NhanSuModel.Store.tbl_Deparment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_Employee" EntityType="QL_NhanSuModel.Store.tbl_Employee" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_tbl_Employee_tbl_Deparment" Association="QL_NhanSuModel.Store.FK_tbl_Employee_tbl_Deparment">
+            <End Role="tbl_Deparment" EntitySet="tbl_Deparment" />
+            <End Role="tbl_Employee" EntitySet="tbl_Employee" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_Deparment">
+          <Key>
+            <PropertyRef Name="DeptId" />
+          </Key>
+          <Property Name="DeptId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="3" />
+          <Property Name="City" Type="nvarchar" MaxLength="20" />
+          <Property Name="Image" Type="nchar" MaxLength="20" />
+          <Property Name="DeptId" Type="int" />
+        </EntityType>
+        <Association Name="FK_tbl_Employee_tbl_Deparment">
+          <End Role="tbl_Deparment" Type="QL_NhanSuModel.Store.tbl_Deparment" Multiplicity="0..1" />
+          <End Role="tbl_Employee" Type="QL_NhanSuModel.Store.tbl_Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Deparment">
+              <PropertyRef Name="DeptId" />
+            </Principal>
+            <Dependent Role="tbl_Employee">
+              <PropertyRef Name="DeptId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QL_NhanSuModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="QL_NhanSuEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Deparment" EntityType="QL_NhanSuModel.tbl_Deparment" />
+          <EntitySet Name="tbl_Employee" EntityType="QL_NhanSuModel.tbl_Employee" />
+          <AssociationSet Name="FK_tbl_Employee_tbl_Deparment" Association="QL_NhanSuModel.FK_tbl_Employee_tbl_Deparment">
+            <End Role="tbl_Deparment" EntitySet="tbl_Deparment" />
+            <End Role="tbl_Employee" EntitySet="tbl_Employee" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_Deparment">
+          <Key>
+            <PropertyRef Name="DeptId" />
+          </Key>
+          <Property Name="DeptId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="tbl_Employee" Relationship="QL_NhanSuModel.FK_tbl_Employee_tbl_Deparment" FromRole="tbl_Deparment" ToRole="tbl_Employee" />
+        </EntityType>
+        <EntityType Name="tbl_Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Gender" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Image" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="DeptId" Type="Int32" />
+          <NavigationProperty Name="tbl_Deparment" Relationship="QL_NhanSuModel.FK_tbl_Employee_tbl_Deparment" FromRole="tbl_Employee" ToRole="tbl_Deparment" />
+        </EntityType>
+        <Association Name="FK_tbl_Employee_tbl_Deparment">
+          <End Role="tbl_Deparment" Type="QL_NhanSuModel.tbl_Deparment" Multiplicity="0..1" />
+          <End Role="tbl_Employee" Type="QL_NhanSuModel.tbl_Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Deparment">
+              <PropertyRef Name="DeptId" />
+            </Principal>
+            <Dependent Role="tbl_Employee">
+              <PropertyRef Name="DeptId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QL_NhanSuModelStoreContainer" CdmEntityContainer="QL_NhanSuEntities">
+          <EntitySetMapping Name="tbl_Deparment">
+            <EntityTypeMapping TypeName="QL_NhanSuModel.tbl_Deparment">
+              <MappingFragment StoreEntitySet="tbl_Deparment">
+                <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Employee">
+            <EntityTypeMapping TypeName="QL_NhanSuModel.tbl_Employee">
+              <MappingFragment StoreEntitySet="tbl_Employee">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

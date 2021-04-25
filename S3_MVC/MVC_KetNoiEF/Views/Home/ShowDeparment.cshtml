@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MVC_Bai5_KetNoiEF.Models.tbl_Deparment>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <title>ShowDeparment</title>
+</head>
+<body>
+    <div class="container">
+        <h2 style="font-weight:bold;color:blue;text-align:center;">TABLE DEPARMENT</h2><br />
+        <p>
+            @Html.ActionLink("Create New","CreateDept","Home")
+        </p>
+        <table class="table table-responsive ">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DeptId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th></th>
+            </tr>
+    
+        @foreach (var item in Model) {
+            <tr>
+                <td style="width:250px">
+                    @Html.DisplayFor(modelItem => item.DeptId)
+                </td>
+                <td style="width:400px">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td style="width:400px">
+                    @Html.ActionLink("Update", "UpdateDept", new { id=item.DeptId }) |
+                    @Html.ActionLink("Details", "DetailDept", new { id=item.DeptId })
+                </td>
+            </tr>
+        }
+    
+        </table>
+        </div>
+</body>
+</html>
+
+

@@ -1,0 +1,53 @@
+﻿@model MVC_Bai5_KetNoiEF.Models.tbl_Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DetailEmp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+</head>
+<body>
+    <div class="container border-primary mt-4 float-left">
+    <fieldset>
+        <legend>tbl_Employee</legend>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="display-label">
+                    <img src="~/Images/@Model.Image" class="rounded" style="width:100%;height:150px;"/>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="display-field">Họ và tên NV: 
+                    <span style="color:red;font-weight:bold;">@Html.DisplayFor(model => model.Name)</span>
+                </div>
+                <div class="display-field">Giới tính: 
+                    <span style="color:red;font-weight:bold;">@Html.DisplayFor(model => model.Gender)</span>
+                </div>
+                <div class="display-field">Thành phố: 
+                   <span style="color:red;font-weight:bold;"> @Html.DisplayFor(model => model.City)</span>
+                </div>
+                @*<div class="display-field">
+                    @Html.DisplayFor(model => model.Image)
+                </div>*@
+                <div class="display-field">Mã Phòng ban: 
+                    <span style="color:red;font-weight:bold;">@Html.DisplayFor(model => model.DeptId)</span>
+                </div>
+            </div>
+    </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Back to List", "ShowEmplParameter", new { id=@Model.DeptId})
+    </p>
+    </div>
+</body>
+</html>

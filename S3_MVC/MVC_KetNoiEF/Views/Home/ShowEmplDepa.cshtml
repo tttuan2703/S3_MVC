@@ -1,0 +1,83 @@
+﻿@model IEnumerable<MVC_Bai5_KetNoiEF.Models.tbl_Employee>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowEmplDepa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <h2 style="font-weight:bold;color:blue;text-align:center;">BẢNG EMPLOYEE-DEPARMENT</h2><br />
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table table-responsive ">
+            <tr style="font-weight:bold">
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Name)*@Mã NV
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Gender)*@Họ và tên
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.City)*@Giới tính
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Image)*@Thành phố
+                </th>
+                <th>
+                   @* @Html.DisplayNameFor(model => model.DeptId)*@Ảnh
+                </th>
+                <th>
+                    Mã PB
+                </th>
+                <th>
+                    Tên PB
+                </th>
+            </tr>
+    
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @*@Html.DisplayFor(modelItem => item.Image)*@
+                    <img src="~/Images/@item.Image" class="rounded" style="width:50px;height:50;"/>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DeptId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tbl_Deparment.Name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                </td>
+            </tr>
+        }
+        </table>
+    </div>
+</body>
+</html>

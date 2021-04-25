@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QL_NhanSuModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="QL_NhanSuModelStoreContainer">
+    <EntitySet Name="tbl_Deparment" EntityType="QL_NhanSuModel.Store.tbl_Deparment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Employee" EntityType="QL_NhanSuModel.Store.tbl_Employee" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tbl_Employee_tbl_Deparment" Association="QL_NhanSuModel.Store.FK_tbl_Employee_tbl_Deparment">
+      <End Role="tbl_Deparment" EntitySet="tbl_Deparment" />
+      <End Role="tbl_Employee" EntitySet="tbl_Employee" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbl_Deparment">
+    <Key>
+      <PropertyRef Name="DeptId" />
+    </Key>
+    <Property Name="DeptId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="3" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="Image" Type="nchar" MaxLength="20" />
+    <Property Name="DeptId" Type="int" />
+  </EntityType>
+  <Association Name="FK_tbl_Employee_tbl_Deparment">
+    <End Role="tbl_Deparment" Type="QL_NhanSuModel.Store.tbl_Deparment" Multiplicity="0..1" />
+    <End Role="tbl_Employee" Type="QL_NhanSuModel.Store.tbl_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Deparment">
+        <PropertyRef Name="DeptId" />
+      </Principal>
+      <Dependent Role="tbl_Employee">
+        <PropertyRef Name="DeptId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

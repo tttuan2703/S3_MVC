@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QL_NhanSuModelStoreContainer" CdmEntityContainer="QL_NhanSuEntities">
+    <EntitySetMapping Name="tbl_Deparment">
+      <EntityTypeMapping TypeName="QL_NhanSuModel.tbl_Deparment">
+        <MappingFragment StoreEntitySet="tbl_Deparment">
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Employee">
+      <EntityTypeMapping TypeName="QL_NhanSuModel.tbl_Employee">
+        <MappingFragment StoreEntitySet="tbl_Employee">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

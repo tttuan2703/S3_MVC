@@ -1,0 +1,63 @@
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\MVC_Bai5_KetNoiEF.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\MVC_Bai5_KetNoiEF.pdb
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\Antlr3.Runtime.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\EntityFramework.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\Microsoft.Web.Infrastructure.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\Newtonsoft.Json.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Net.Http.Formatting.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Http.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Http.WebHost.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Mvc.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Optimization.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Providers.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Razor.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Deployment.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Razor.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\WebGrease.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\EntityFramework.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\Newtonsoft.Json.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Net.Http.Formatting.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Http.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Http.WebHost.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Mvc.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.Razor.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Deployment.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Razor.xml
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.csprojResolveAssemblyReference.cache
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.dll
+E:\LuuDuLieuSinhVien\TaiThanhTuan_CNWeb_B8\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.pdb
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\MVC_Bai5_KetNoiEF.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\MVC_Bai5_KetNoiEF.pdb
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\Antlr3.Runtime.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\EntityFramework.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\Microsoft.Web.Infrastructure.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\Newtonsoft.Json.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Mvc.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Optimization.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Providers.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Razor.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Deployment.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Razor.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\WebGrease.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\EntityFramework.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\Newtonsoft.Json.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Mvc.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Razor.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Deployment.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.WebPages.Razor.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.pdb
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\MVC_Bai5_KetNoiEF.dll.config
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Net.Http.Formatting.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Http.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Http.WebHost.dll
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Net.Http.Formatting.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Http.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\bin\System.Web.Http.WebHost.xml
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.csprojAssemblyReference.cache
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.csproj.CoreCompileInputs.cache
+D:\Công Nghệ Web\TaiThanhTuan_CNWeb_B9\MVC_Bai5_KetNoiEF\obj\Debug\MVC_Bai5_KetNoiEF.csproj.CopyComplete
